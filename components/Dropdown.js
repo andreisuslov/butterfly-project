@@ -8,7 +8,7 @@ const Dropdown = ({ title, links, isOpen, onToggle, onMouseEnter, onMouseLeave }
 
   return (
     <div
-      className="relative inline-block text-left" 
+      className="relative inline-block text-left"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -25,13 +25,13 @@ const Dropdown = ({ title, links, isOpen, onToggle, onMouseEnter, onMouseLeave }
         </span>
       </button>
       {isOpen && (
-        <div className="origin-top-left absolute left-0 w-56 mt-1 rounded-md shadow-lg bg-white"> 
+        <div className="absolute left-0 mt-1 w-56 origin-top-left rounded-md bg-white shadow-lg">
           <div className="rounded-md ring-1 ring-black ring-opacity-5">
             {links.map((link) => (
               <Link
                 key={link.title}
                 href={link.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+                className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
               >
                 {link.title}
               </Link>
