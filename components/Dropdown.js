@@ -31,7 +31,7 @@ const Dropdown = ({ title, links, isOpen, onToggle, onMouseEnter, onMouseLeave }
               <Link
                 key={link.title}
                 href={link.href}
-                className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
+                className="whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
               >
                 {link.title}
               </Link>
